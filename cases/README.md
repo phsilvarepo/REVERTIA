@@ -1,6 +1,6 @@
 # REVERTIA Case Detection
 
-Script to generate synthetic computer images of the casesusing Isaac Sim.
+Script to generate synthetic computer images of the cases using Isaac Sim.
 
 Possible improvements:
 
