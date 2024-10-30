@@ -116,7 +116,7 @@ with rep.new_layer():
     # Initialize and attach writer
     writer = rep.WriterRegistry.get("BasicWriter")
 
-    writer.initialize(output_dir="components_dell_3040", rgb=True, bounding_box_2d_tight=True)
+    writer.initialize(output_dir="components_dell_3040_sff", rgb=True, bounding_box_2d_tight=True)
 
     writer.attach([render_product])
 

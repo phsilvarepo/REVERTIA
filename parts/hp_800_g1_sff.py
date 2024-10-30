@@ -28,15 +28,10 @@ with rep.new_layer():
         rep.modify.pose(
                 scale=(100, 100, 100)
                 )
+        
     Disk_Drive_PATH = '/home/rics/Documents/pc_cases/Assets/Parts/HP_800_G1_SFF/disk_drive/disk_drive.usd'
     Disk_Drive = rep.create.from_usd(Disk_Drive_PATH,semantics=[('class', 'Disk_Drive')])
     with Disk_Drive:
-        rep.modify.pose(
-                scale=(100, 100, 100)
-                )
-    Fan_PATH = '/home/rics/Documents/pc_cases/Assets/Parts/HP_800_G1_SFF/fan/fan.usd'
-    Fan = rep.create.from_usd(Fan_PATH)
-    with Fan:
         rep.modify.pose(
                 scale=(100, 100, 100)
                 )
@@ -121,7 +116,7 @@ with rep.new_layer():
     # Initialize and attach writer
     writer = rep.WriterRegistry.get("BasicWriter")
 
-    writer.initialize(output_dir="components_dell_790", rgb=True, bounding_box_2d_tight=True)
+    writer.initialize(output_dir="components_hp_800_g1_sff", rgb=True, bounding_box_2d_tight=True)
 
     writer.attach([render_product])
 

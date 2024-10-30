@@ -21,10 +21,10 @@ with rep.new_layer():
         rep.modify.pose(
                 scale=(100, 100, 100)
                 )
-
-    Disk_Drive_PATH = '/home/rics/Documents/pc_cases/Assets/Parts/HP_800_G3_MD/disk_drive/disk_drive.usd'
-    Disk_Drive = rep.create.from_usd(Disk_Drive_PATH)
-    with Disk_Drive:
+        
+    Cover_PATH = '/home/rics/Documents/pc_cases/Assets/Parts/HP_800_G3_MD/cover/cover.usd'
+    Cover = rep.create.from_usd(Cover_PATH)
+    with Cover:
         rep.modify.pose(
                 scale=(100, 100, 100)
                 )
@@ -42,7 +42,14 @@ with rep.new_layer():
         rep.modify.pose(
                 scale=(100, 100, 100)
                 )
-    
+        
+    HDD_Fan_PATH = '/home/rics/Documents/pc_cases/Assets/Parts/HP_800_G3_MD/hdd_fan/hdd_fan.usd'
+    HDD_Fan = rep.create.from_usd(HDD_Fan_PATH)
+    with Fan:
+        rep.modify.pose(
+                scale=(100, 100, 100)
+                )
+
     Heat_Sink_PATH = '/home/rics/Documents/pc_cases/Assets/Parts/HP_800_G3_MD/heat_sink/heat_sink.usd'
     Heat_Sink = rep.create.from_usd(Heat_Sink_PATH)
     with Heat_Sink:
@@ -56,13 +63,6 @@ with rep.new_layer():
         rep.modify.pose(
                 scale=(100, 100, 100)
                 )
-    
-    Power_Supply_PATH = '/home/rics/Documents/pc_cases/Assets/Parts/HP_800_G3_MD/power_supply/power_supply.usd'
-    Power_Supply = rep.create.from_usd(Power_Supply_PATH,semantics=[('class', 'Power_Supply')])
-    with Power_Supply:
-        rep.modify.pose(
-                scale=(100, 100, 100),
-                )    
     
     RAM_PATH = '/home/rics/Documents/pc_cases/Assets/Parts/HP_800_G3_MD/ram/ram.usd'
     RAM = rep.create.from_usd(RAM_PATH)
