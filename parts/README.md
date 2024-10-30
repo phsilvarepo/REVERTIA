@@ -1,4 +1,4 @@
-# REVERTIA 
+# REVERTIA Part Detector
 
 Scripts to generate synthetic image dataset in Isaac Sim for each computer. 
 
