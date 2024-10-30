@@ -23,7 +23,7 @@ with rep.new_layer():
                 )
 
     Disk_Drive_PATH = '/home/rics/Documents/pc_cases/Assets/Parts/HP_8200_SFF/disk_drive/disk_drive.usd'
-    Disk_Drive = rep.create.from_usd(Disk_Drive_PATH)
+    Disk_Drive = rep.create.from_usd(Disk_Drive_PATH, semantics=[('class', 'Disk_Drive')])
     with Disk_Drive:
         rep.modify.pose(
                 scale=(100, 100, 100)
@@ -37,7 +37,7 @@ with rep.new_layer():
                 )
             
     HDD_PATH = '/home/rics/Documents/pc_cases/Assets/Parts/HP_8200_SFF/hdd/hdd.usd'
-    HDD = rep.create.from_usd(HDD_PATH,semantics=[('class', 'HDD')])
+    HDD = rep.create.from_usd(HDD_PATH)
     with HDD:
         rep.modify.pose(
                 scale=(100, 100, 100)

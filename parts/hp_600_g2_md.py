@@ -58,7 +58,7 @@ with rep.new_layer():
                 )
     
     RAM_Slots_PATH = '/home/rics/Documents/pc_cases/Assets/Parts/HP_600_G2_MD/ram_slots/ram_slots.usd'
-    RAM_Slots = rep.create.from_usd(RAM_Slots_PATH, semantics=[('class', 'RAM_Slots')])
+    RAM_Slots = rep.create.from_usd(RAM_Slots_PATH)
     with RAM_Slots:
         rep.modify.pose(
                 scale=(100, 100, 100)
