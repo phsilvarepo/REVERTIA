@@ -5,4 +5,4 @@ Script to generate synthetic computer images of the cases using Isaac Sim.
 Possible improvements:
 
 Lighting 
-Bakground Images
+Background Images
